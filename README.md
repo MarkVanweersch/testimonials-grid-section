@@ -28,6 +28,10 @@ Desktop:
 
 ![](./solution/desktop.png)
 
+Tablet:
+
+![](./solution/tablet.png)
+
 Mobile:
 
 ![](./solution/mobile.png)

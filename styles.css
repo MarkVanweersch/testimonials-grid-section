@@ -49,13 +49,6 @@ section {
   padding: 2.5em;
 }
 
-.quotation-img {
- position: absolute;
- z-index: 1;
- top: 0;
- right: 5em;
-}
-
 .wide {
   grid-column: span 2;
 }
@@ -65,11 +58,22 @@ section {
   grid-row: 1 / 3;
 }
 
-@media (max-width: 50em) {
+@media (max-width: 60em) {
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 2em;
     margin: 5.5em 1.85em;
+  }
+
+  .tall {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+  }
+}
+
+@media (max-width: 40em) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 
   section {
@@ -89,6 +93,13 @@ section {
     grid-row: span 1;
   }
 }
+
+.quotation-img {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 5em;
+ }
 
 .person-info {
   display: flex;

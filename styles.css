@@ -43,8 +43,17 @@ p {
 }
 
 section {
+  position: relative;
+  z-index: 0;
   border-radius: 0.5em;
   padding: 2.5em;
+}
+
+.quotation-img {
+ position: absolute;
+ z-index: 1;
+ top: 0;
+ right: 5em;
 }
 
 .wide {
@@ -65,6 +74,10 @@ section {
 
   section {
     padding-block: 2em 3em;
+  }
+
+  .quotation-img {
+    right: 2em;
   }
 
   .wide {
@@ -105,6 +118,8 @@ section {
 }
 
 .head-quote {
+  position: relative;
+  z-index: 2;
   font-size: 1.5em;
   font-weight: 600;
   margin-block: 1em;
@@ -119,7 +134,7 @@ section.purple {
   color: var(--clr-light-grayish-blue);
 }
 
-section.purple img {
+section.purple .person-img {
   border: 0.125em solid var(--clr-white-opacity-50);
 }
 
